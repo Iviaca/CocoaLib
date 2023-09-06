@@ -1,5 +1,5 @@
 ﻿CocoaLib
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 F:\codes&apps\dsktp\CocoaLib\App.xaml
 2376403462
 
-61619697742
+42104924793
 198947991364
 MainWindow.xaml;View\LoginView.xaml;
 
-True
+False
 
