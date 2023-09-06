@@ -6,8 +6,36 @@
         xmlns:local="clr-namespace:CocoaLib.View"
         mc:Ignorable="d"
         Title="LoginView" Height="550" Width="800"
-        >
-    <Grid>
-        
-    </Grid>
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border CornerRadius="14">
+        <Border.Background>
+            <ImageBrush ImageSource="./../pics/background.png"/>
+        </Border.Background>
+        <Border CornerRadius="12"
+                BorderThickness="4"
+                Opacity=".35">
+            <!--制造圆角效果：删掉Grid用Border，
+        设置CornerRadius参数并且在Windows的
+        背景设为Transparent，allowTransparent=true-->
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint=".25,0" EndPoint=".75,1">
+                    <GradientStop Color="#1ABC9C" Offset="0"/>
+                    <GradientStop Color="#9B59B6" Offset=".25"/>
+                    <GradientStop Color="#2874A6" Offset=".75"/>
+                    <GradientStop Color="#F5CBA7" Offset="1"/>
+                </LinearGradientBrush>
+                <!--渐变效果使用Gradient，左上(0,0),右下(1,1);
+            启示结束点的线段用GradientStop来设置线段当中的颜色点-->
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint=".5,0" EndPoint=".5,1">
+                    <GradientStop Color="#633974" Offset=".7"/>
+                    <GradientStop Color="#1A5276" Offset=".8"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+    </Border>
 </Window>
