@@ -43,13 +43,14 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/> <!--right margin column-->
+                    </Grid.ColumnDefinitions>
+                </Grid>
             </Grid>
         </Border>
     </Border>
