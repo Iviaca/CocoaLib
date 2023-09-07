@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 F:\codes&apps\dsktp\CocoaLib\App.xaml
-2376403462
+41300840269
 
-61619697742
+7-182241690
 198947991364
-MainWindow.xaml;View\LoginView.xaml;
+MainWindow.xaml;rsc\CustonButtonMenu.xaml;rsc\ResourceDictionaryCollections.xaml;View\LoginView.xaml;
 
-False
+True
 

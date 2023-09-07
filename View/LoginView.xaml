@@ -4,11 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CocoaLib.View"
+        xmlns:localrsc="clr-namespace:CocoaLib.rsc"
         mc:Ignorable="d"
         Title="LoginView" Height="550" Width="800"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/CocoaLib;component/rsc/ResourceDictionaryCollections.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
     <Border CornerRadius="14">
         <Border.Background>
             <ImageBrush ImageSource="./../pics/background.png"/>
@@ -50,6 +60,30 @@
                         <ColumnDefinition Width="25"/>
                         <ColumnDefinition Width="5"/> <!--right margin column-->
                     </Grid.ColumnDefinitions>
+
+                    <localrsc:CustomBtnMenu Grid.Row="0"
+                                            Grid.Column="1"
+                                            Content="-"
+                                            FontSize="25"
+                                            Height="25"
+                                            Width="25"
+                                            ButtonCornerRadius="50"
+                                            Background="Aquamarine"
+                                            HorizontalContentAlignment="Center"
+                                            ColorHover="Aqua"
+                                            ColorPressed="CornflowerBlue"/>
+
+                    <localrsc:CustomBtnMenu Grid.Row="0"
+                                            Grid.Column="2"
+                                            Content="X"
+                                            FontSize="20"
+                                            Height="25"
+                                            Width="25"
+                                            ButtonCornerRadius="25"
+                                            Foreground="PaleVioletRed"
+                                            ColorHover="Pink"
+                                            ColorPressed="OrangeRed"
+                                            Padding="0,0,0,10"/> 
                 </Grid>
             </Grid>
         </Border>

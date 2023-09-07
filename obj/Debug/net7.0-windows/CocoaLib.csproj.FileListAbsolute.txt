@@ -21,3 +21,6 @@ F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\refint\CocoaLib.dll
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CocoaLib.pdb
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CocoaLib.genruntimeconfig.cache
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\ref\CocoaLib.dll
+F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\rsc\ResourceDictionaryCollections.baml
+F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\rsc\CustonButtonMenu.baml
