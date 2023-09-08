@@ -1,35 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "F:\\codes&apps\\dsktp\\CocoaLib\\CocoaLib.csproj": {}
+    "F:\\Documents\\GitHub\\CocoaLib\\CocoaLib.csproj": {}
   },
   "projects": {
-    "F:\\codes&apps\\dsktp\\CocoaLib\\CocoaLib.csproj": {
+    "F:\\Documents\\GitHub\\CocoaLib\\CocoaLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\codes&apps\\dsktp\\CocoaLib\\CocoaLib.csproj",
+        "projectUniqueName": "F:\\Documents\\GitHub\\CocoaLib\\CocoaLib.csproj",
         "projectName": "CocoaLib",
-        "projectPath": "F:\\codes&apps\\dsktp\\CocoaLib\\CocoaLib.csproj",
-        "packagesPath": "C:\\Users\\LimeElven\\.nuget\\packages\\",
-        "outputPath": "F:\\codes&apps\\dsktp\\CocoaLib\\obj\\",
+        "projectPath": "F:\\Documents\\GitHub\\CocoaLib\\CocoaLib.csproj",
+        "packagesPath": "C:\\Users\\cocoa\\.nuget\\packages\\",
+        "outputPath": "F:\\Documents\\GitHub\\CocoaLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VisualStudio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "G:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LimeElven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cocoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

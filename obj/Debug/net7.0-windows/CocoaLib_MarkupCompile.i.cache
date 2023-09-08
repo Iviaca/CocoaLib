@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\
+F:\Documents\GitHub\CocoaLib\obj\Debug\net7.0-windows\
 CocoaLib
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-F:\codes&apps\dsktp\CocoaLib\App.xaml
+F:\Documents\GitHub\CocoaLib\App.xaml
 41300840269
 
-7-182241690
+101582040780
 198947991364
 MainWindow.xaml;rsc\CustonButtonMenu.xaml;rsc\ResourceDictionaryCollections.xaml;View\LoginView.xaml;
 
-True
+False
 

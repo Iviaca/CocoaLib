@@ -21,11 +21,11 @@
     
     <Border CornerRadius="14">
         <Border.Background>
-            <ImageBrush ImageSource="./../pics/background.png"/>
+            <ImageBrush ImageSource="./../pics/background1.jpg"/>
         </Border.Background>
         <Border CornerRadius="12"
                 BorderThickness="4"
-                Opacity=".35">
+                Opacity=".75">
             <!--制造圆角效果：删掉Grid用Border，
         设置CornerRadius参数并且在Windows的
         背景设为Transparent，allowTransparent=true-->
@@ -41,9 +41,9 @@
             </Border.BorderBrush>
 
             <Border.Background>
-                <LinearGradientBrush StartPoint=".5,0" EndPoint=".5,1">
-                    <GradientStop Color="#633974" Offset=".7"/>
-                    <GradientStop Color="#1A5276" Offset=".8"/>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#633974" Offset="0"/>
+                    <GradientStop Color="#1A5276" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
 
@@ -61,12 +61,14 @@
                         <ColumnDefinition Width="5"/> <!--right margin column-->
                     </Grid.ColumnDefinitions>
 
+                    <!--自定义按钮-->
                     <localrsc:CustomBtnMenu Grid.Row="0"
                                             Grid.Column="1"
                                             Content="-"
                                             FontSize="25"
                                             Height="25"
                                             Width="25"
+                                            Foreground="DarkCyan"
                                             ButtonCornerRadius="50"
                                             Background="Aquamarine"
                                             HorizontalContentAlignment="Center"
