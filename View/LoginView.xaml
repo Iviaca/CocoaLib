@@ -26,7 +26,7 @@
         <Border CornerRadius="12"
                 BorderThickness="4"
                 Opacity=".75">
-            <!--制造圆角效果：删掉Grid用Border，
+            <!--制造圆角效果：在Grid外套用Border，
         设置CornerRadius参数并且在Windows的
         背景设为Transparent，allowTransparent=true-->
             <Border.BorderBrush>

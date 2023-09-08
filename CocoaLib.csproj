@@ -13,11 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="pics\background.png" />
     <Resource Include="pics\background1.jpg" />
   </ItemGroup>

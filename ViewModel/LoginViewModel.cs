@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace CocoaLib.ViewModel
 {
-    class LoginViewModel:INotifyPropertyChanged
+    class LoginViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler? PropertyChanged; 
     }
 }
