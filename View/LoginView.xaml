@@ -18,7 +18,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    
+
     <Border CornerRadius="14">
         <Border.Background>
             <ImageBrush ImageSource="./../pics/background1.jpg"/>
@@ -57,8 +57,10 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
                         <ColumnDefinition Width="25"/>
-                        <ColumnDefinition Width="5"/> <!--right margin column-->
+                        <ColumnDefinition Width="5"/>
+                        <!--right margin column-->
                     </Grid.ColumnDefinitions>
 
                     <!--自定义按钮-->
@@ -76,7 +78,7 @@
                                             ColorPressed="CornflowerBlue"/>
 
                     <localrsc:CustomBtnMenu Grid.Row="0"
-                                            Grid.Column="2"
+                                            Grid.Column="3"
                                             Content="X"
                                             FontSize="20"
                                             Height="25"
@@ -85,8 +87,47 @@
                                             Foreground="PaleVioletRed"
                                             ColorHover="Pink"
                                             ColorPressed="OrangeRed"
-                                            Padding="0,0,0,10"/> 
+                                            Padding="0,0,0,10"/>
+
                 </Grid>
+                
+                <StackPanel Grid.Row="1"
+                            Grid.Column="0"
+                            Width="250"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+                    <Image Source="./../pics/placeholder.jpg"
+                           Height="100"
+                           Width="100"
+                           Opacity="100"/>
+
+                    <TextBlock Margin="0,15,0,0"
+                               Foreground="MistyRose"
+                               TextWrapping="Wrap"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Text="There happen to be a dish to feed"/>
+                    <TextBlock />
+
+                    <TextBox x:Name="txtUsr"
+                             FontSize="16"
+                             FontWeight="Medium"
+                             CaretBrush="DarkGray"
+                             Foreground="LightGray"
+                             BorderBrush="MediumAquamarine"
+                             BorderThickness="0,0,0,1"
+                             Margin="0,15,0,0"
+                             Padding="15,0,0,0">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="./../pics/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                        </TextBox.Background>
+                        
+                    </TextBox>
+
+
+                </StackPanel>
             </Grid>
         </Border>
     </Border>
