@@ -167,7 +167,7 @@
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Center">
                         <TextBlock Text="Forget password?"
-                                   Foreground="LightGray"/>
+                                   Foreground="LightSlateGray"/>
                         <TextBlock Text="Reset"
                                    Foreground="LightGray"
                                    Cursor="Hand"
