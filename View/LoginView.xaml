@@ -25,7 +25,7 @@
         </Border.Background>
         <Border CornerRadius="12"
                 BorderThickness="4"
-                Opacity=".75">
+                Opacity=".8">
             <!--制造圆角效果：在Grid外套用Border，
         设置CornerRadius参数并且在Windows的
         背景设为Transparent，allowTransparent=true-->
@@ -67,9 +67,10 @@
                     <localrsc:CustomBtnMenu Grid.Row="0"
                                             Grid.Column="1"
                                             Content="-"
-                                            FontSize="25"
+                                            FontSize="20"
                                             Height="25"
                                             Width="25"
+                                            FontWeight="UltraBlack"
                                             Foreground="DarkCyan"
                                             ButtonCornerRadius="50"
                                             Background="Aquamarine"
@@ -79,54 +80,99 @@
 
                     <localrsc:CustomBtnMenu Grid.Row="0"
                                             Grid.Column="3"
-                                            Content="X"
-                                            FontSize="20"
+                                            Content="x"
+                                            FontWeight="UltraBold"
+                                            FontSize="16"
                                             Height="25"
                                             Width="25"
                                             ButtonCornerRadius="25"
                                             Foreground="PaleVioletRed"
                                             ColorHover="Pink"
                                             ColorPressed="OrangeRed"
-                                            Padding="0,0,0,10"/>
-
+                                            Padding="0,0,0,20"/>
                 </Grid>
                 
                 <StackPanel Grid.Row="1"
                             Grid.Column="0"
-                            Width="250"
+                            Width="400"
                             Orientation="Vertical"
-                            Margin="0,35,0,0">
-                    <Image Source="./../pics/placeholder.jpg"
-                           Height="100"
-                           Width="100"
-                           Opacity="100"/>
-
-                    <TextBlock Margin="0,15,0,0"
+                            Margin="0,20,0,0">
+                    <Image Source="./../pics/CanvasIcon.png"
+                           Height="250"
+                           Width="400"
+                           Opacity="1"/>
+                    <StackPanel Width="250"
+                                Orientation="Vertical">
+                        <TextBlock Margin="0,5,0,0"
                                Foreground="MistyRose"
                                TextWrapping="Wrap"
-                               HorizontalAlignment="Center"
+                               HorizontalAlignment="Left"
                                VerticalAlignment="Center"
-                               Text="There happen to be a dish to feed"/>
-                    <TextBlock />
+                               Text="Username"/>
 
-                    <TextBox x:Name="txtUsr"
+                        <TextBox x:Name="txtUsr"
+                             Width="250"
                              FontSize="16"
                              FontWeight="Medium"
                              CaretBrush="DarkGray"
                              Foreground="LightGray"
                              BorderBrush="MediumAquamarine"
                              BorderThickness="0,0,0,1"
-                             Margin="0,15,0,0"
-                             Padding="15,0,0,0">
-                        <TextBox.Background>
-                            <ImageBrush ImageSource="./../pics/user-icon.png"
+                             Padding="25,0,0,0">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="./../pics/user-icon.png"
                                         Stretch="None"
                                         AlignmentX="Left"/>
-                        </TextBox.Background>
-                        
-                    </TextBox>
+                            </TextBox.Background>
+                        </TextBox>
 
-
+                        <TextBlock Margin="0,15,0,0"
+                                   Foreground="MistyRose"
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Center"
+                                   Text="Password"/>
+                        <PasswordBox x:Name="txtPwd"
+                             Width="250"
+                             FontSize="16"
+                             FontWeight="Medium"
+                             CaretBrush="DarkGray"
+                             Foreground="LightGray"
+                             BorderBrush="MediumAquamarine"
+                             BorderThickness="0,0,0,1"
+                             Padding="25,0,0,0">
+                            <PasswordBox.Background>
+                                <ImageBrush ImageSource="./../pics/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                            </PasswordBox.Background>
+                        </PasswordBox>
+                    </StackPanel>
+                    <localrsc:CustomBtnMenu Margin="0,20,0,10"
+                                            Width="120"
+                                            Height="40"
+                                            Content="Log in"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Padding="0,2,0,0"
+                                            FontSize="25" 
+                                            FontFamily="Calibri"
+                                            FontWeight="Bold"
+                                            Background="LightGray"
+                                            Foreground="MediumSeaGreen"
+                                            ColorHover="LightSkyBlue"
+                                            ColorPressed="DarkSlateGray"
+                                            ButtonCornerRadius="20">
+                    </localrsc:CustomBtnMenu>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <TextBlock Text="Forget password?"
+                                   Foreground="LightGray"/>
+                        <TextBlock Text="Reset"
+                                   Foreground="LightGray"
+                                   Cursor="Hand"
+                                   Margin="15,0"/>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </Border>

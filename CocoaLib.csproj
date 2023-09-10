@@ -11,11 +11,13 @@
     <None Remove="Model\placeholder.jpg" />
     <None Remove="pics\background.png" />
     <None Remove="pics\background1.jpg" />
+    <None Remove="pics\CanvasIcon.png" />
     <None Remove="pics\key-icon.png" />
     <None Remove="pics\user-icon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="pics\CanvasIcon.png" />
     <Resource Include="pics\key-icon.png" />
     <Resource Include="pics\placeholder.jpg" />
     <Resource Include="pics\background.png" />
