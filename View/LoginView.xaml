@@ -18,11 +18,12 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-
+    
     <Border CornerRadius="14">
         <Border.Background>
             <ImageBrush ImageSource="./../pics/background1.jpg"/>
         </Border.Background>
+        
         <Border CornerRadius="12"
                 BorderThickness="4"
                 Opacity=".8">
@@ -176,5 +177,7 @@
                 </StackPanel>
             </Grid>
         </Border>
+
+        
     </Border>
 </Window>
