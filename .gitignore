@@ -399,3 +399,4 @@ FodyWeavers.xsd
 
 #Add app.config
 *.config
+app.config
