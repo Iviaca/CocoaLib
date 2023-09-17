@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace CocoaLib.ViewModel
 {
@@ -34,6 +35,36 @@ namespace CocoaLib.ViewModel
         {
             get => _isVisible;
             set { _isVisible = value; OnPropertyChanged(); }
+        }
+
+        #region Commands
+        public ICommand LoginCommand { get; }
+        public ICommand RecoverPasswordCommand { get; }
+        public ICommand ShowPasswordCommand { get; }
+        public ICommand RememberPasswordCommand { get; }
+        #endregion
+
+        #region ctor
+        public LoginViewModel()
+        {
+            LoginCommand = new ViewModelCommand(ExecuteLoginCmd, CanExecuteLogin);//构造函数给几个command接口赋值实例化的viewmodelCommand
+            RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverCmd("", ""));
+        }
+
+        private void ExecuteRecoverCmd(string username, string email)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+        private void ExecuteLoginCmd(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool CanExecuteLogin(object obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

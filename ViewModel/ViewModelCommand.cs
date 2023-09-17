@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace CocoaLib.ViewModel
 {
-    class ViewCommandCommand : ICommand
+    class ViewModelCommand : ICommand
     {
         #region Fields
         public Action<object>? ActionCommand { get; set; }
@@ -20,7 +20,7 @@ namespace CocoaLib.ViewModel
         /// </summary>
         /// <param name="_actionCommand"></param>
         /// <param name="_canExecuteCommand"></param>
-        public ViewCommandCommand(Action<object> _actionCommand, Predicate<object> _canExecuteCommand)
+        public ViewModelCommand(Action<object> _actionCommand, Predicate<object> _canExecuteCommand)
         {
             ActionCommand = _actionCommand;
             CanExecuteCommand = _canExecuteCommand;
@@ -30,7 +30,7 @@ namespace CocoaLib.ViewModel
         /// 妹有判断是否可执行的情况
         /// </summary>
         /// <param name="_actionCommand"></param>
-        public ViewCommandCommand(Action<object> _actionCommand)
+        public ViewModelCommand(Action<object> _actionCommand)
         {
             ActionCommand = _actionCommand;
             CanExecuteCommand = (object obj) => { return true; };
