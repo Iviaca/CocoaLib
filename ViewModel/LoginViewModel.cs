@@ -47,7 +47,7 @@ namespace CocoaLib.ViewModel
         #region ctor
         public LoginViewModel()
         {
-            LoginCommand = new ViewModelCommand(ExecuteLoginCmd, CanExecuteLogin);//构造函数给几个command接口赋值实例化的viewmodelCommand
+            LoginCommand = new ViewModelCommand(ExecuteLoginCmd, CanExecuteLogin);//李氏转换 构造函数给几个command接口赋值实例化的viewmodelCommand
             RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverCmd("", ""));
         }
 
@@ -64,7 +64,13 @@ namespace CocoaLib.ViewModel
 
         private bool CanExecuteLogin(object obj)
         {
-            throw new NotImplementedException();
+            bool dataValid;
+            if (string.IsNullOrEmpty(Username) || Username.Length < 5 || Password == null || Password.Length < 5)
+                dataValid = false;
+            else
+                dataValid = true;
+
+            return dataValid;
         }
     }
 }
