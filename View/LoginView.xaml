@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CocoaLib.View"
+        xmlns:loginvm="clr-namespace:CocoaLib.ViewModel"
         xmlns:localrsc="clr-namespace:CocoaLib.rsc"
         mc:Ignorable="d"
         Title="LoginView" Height="550" Width="800"
@@ -18,6 +19,10 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
+
+    <Window.DataContext>
+        <loginvm:LoginViewModel/>
+    </Window.DataContext>
     
     <Border CornerRadius="14">
         <Border.Background>
