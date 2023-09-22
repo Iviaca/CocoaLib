@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace CocoaLib.ViewModel
@@ -59,7 +60,7 @@ namespace CocoaLib.ViewModel
 
         private void ExecuteLoginCmd(object obj)
         {
-            throw new NotImplementedException();
+            MessageBox.Show("keainie");
         }
 
         private bool CanExecuteLogin(object obj)

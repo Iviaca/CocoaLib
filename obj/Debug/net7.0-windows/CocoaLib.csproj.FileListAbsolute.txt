@@ -69,3 +69,5 @@ F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CocoaLib.csproj.CopyComple
 F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\Npgsql.dll
 F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CocoaLib.csproj.AssemblyReference.cache
+F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CustomControl\BindablePasswordBox.g.cs
+F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CustomControl\BindablePasswordBox.baml

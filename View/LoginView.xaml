@@ -5,30 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CocoaLib.View"
         xmlns:loginvm="clr-namespace:CocoaLib.ViewModel"
-        xmlns:localrsc="clr-namespace:CocoaLib.rsc"
+        xmlns:localrsc="clr-namespace:CocoaLib.rsc" 
+        xmlns:customcontrol="clr-namespace:CocoaLib.CustomControl"
         mc:Ignorable="d"
         Title="LoginView" Height="550" Width="800"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
+    <!-- 引用命名空间：alias起名为loginvm xmlns:loginvm="clr-namespace:CocoaLib.ViewModel"-->
 
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/CocoaLib;component/rsc/ResourceDictionaryCollections.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+            <!--BooleanToVisibilityConverter在没有ResourceDictionary的时候放在Windows.Resource下面，有的情况下放在这个位置-->
         </ResourceDictionary>
     </Window.Resources>
 
     <Window.DataContext>
         <loginvm:LoginViewModel/>
+        <!--实例化了LoginViewModel类,该类位于前面定义的CocoaLib.ViewModel命名空间中。-->
     </Window.DataContext>
-    
+
+    <Window.Visibility>
+        <Binding Path="IsVisible"
+                 Mode="TwoWay"
+                 Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>
+
     <Border CornerRadius="14">
         <Border.Background>
             <ImageBrush ImageSource="./../pics/background1.jpg"/>
         </Border.Background>
-        
+
         <Border CornerRadius="12"
                 BorderThickness="4"
                 Opacity=".8">
@@ -97,7 +108,7 @@
                                             ColorPressed="OrangeRed"
                                             Padding="0,0,0,20"/>
                 </Grid>
-                
+
                 <StackPanel Grid.Row="1"
                             Grid.Column="0"
                             Width="400"
@@ -117,6 +128,7 @@
                                Text="Username"/>
 
                         <TextBox x:Name="txtUsr"
+                                 Text="{Binding Username}"
                              Width="250"
                              FontSize="16"
                              FontWeight="Medium"
@@ -138,21 +150,9 @@
                                    HorizontalAlignment="Left"
                                    VerticalAlignment="Center"
                                    Text="Password"/>
-                        <PasswordBox x:Name="txtPwd"
-                             Width="250"
-                             FontSize="16"
-                             FontWeight="Medium"
-                             CaretBrush="DarkGray"
-                             Foreground="LightGray"
-                             BorderBrush="MediumAquamarine"
-                             BorderThickness="0,0,0,1"
-                             Padding="25,0,0,0">
-                            <PasswordBox.Background>
-                                <ImageBrush ImageSource="./../pics/key-icon.png"
-                                        Stretch="None"
-                                        AlignmentX="Left"/>
-                            </PasswordBox.Background>
-                        </PasswordBox>
+                        <customcontrol:BindablePasswordBox 
+                            PassWord="{Binding Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
                     </StackPanel>
                     <localrsc:CustomBtnMenu Margin="0,20,0,10"
                                             Width="120"
@@ -168,7 +168,8 @@
                                             Foreground="MediumSeaGreen"
                                             ColorHover="LightSkyBlue"
                                             ColorPressed="DarkSlateGray"
-                                            ButtonCornerRadius="20">
+                                            ButtonCornerRadius="20"
+                                            Command="{Binding LoginCommand,UpdateSourceTrigger=PropertyChanged}">
                     </localrsc:CustomBtnMenu>
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Center">
@@ -183,6 +184,6 @@
             </Grid>
         </Border>
 
-        
+
     </Border>
 </Window>

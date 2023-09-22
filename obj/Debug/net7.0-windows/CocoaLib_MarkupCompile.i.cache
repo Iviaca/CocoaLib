@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 F:\codes&apps\dsktp\CocoaLib\App.xaml
-41300840269
+5-552443189
 
-14400733498
+14-328152427
 212-1352666957
-MainWindow.xaml;rsc\CustonButtonMenu.xaml;rsc\ResourceDictionaryCollections.xaml;View\LoginView.xaml;
+CustomControl\BindablePasswordBox.xaml;MainWindow.xaml;rsc\CustonButtonMenu.xaml;rsc\ResourceDictionaryCollections.xaml;View\LoginView.xaml;
 
 False
 
