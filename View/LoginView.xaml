@@ -128,7 +128,7 @@
                                Text="Username"/>
 
                         <TextBox x:Name="txtUsr"
-                                 Text="{Binding Username}"
+                                 Text="{Binding Username, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                              Width="250"
                              FontSize="16"
                              FontWeight="Medium"
@@ -152,9 +152,17 @@
                                    Text="Password"/>
                         <customcontrol:BindablePasswordBox 
                             PassWord="{Binding Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="{Binding ErrorMsg}"
+                                   Foreground="#D7596D"
+                                   FontSize="12"
+                                   FontFamily="Montserrat"
+                                   Margin="0,0,10,0"
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Left"/>
+
 
                     </StackPanel>
-                    <localrsc:CustomBtnMenu Margin="0,20,0,10"
+                    <localrsc:CustomBtnMenu Margin="0,30,0,10"
                                             Width="120"
                                             Height="40"
                                             Content="Log in"

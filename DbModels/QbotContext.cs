@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace CocoaLib.DbModels;
 
-
 public partial class QbotContext : DbContext
 {
-    string connectionString = ConfigurationManager.ConnectionStrings["npgsqlConnectionString"].ConnectionString;
-
     public QbotContext()
     {
     }
@@ -19,24 +16,26 @@ public partial class QbotContext : DbContext
     {
     }
 
-    public virtual DbSet<Loginrelation> Loginrelations { get; set; }
+    public virtual DbSet<LoginWpfUsersInfo> LoginWpfUsersInfos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql(connectionString);
+        => optionsBuilder.UseNpgsql(ConfigurationManager.ConnectionStrings["npgsqlConnectionString"].ConnectionString);
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Loginrelation>(entity =>
+        modelBuilder.Entity<LoginWpfUsersInfo>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("loginrelation_pkey");
 
-            entity.ToTable("loginrelation");
+            entity.ToTable("LoginWpfUsersInfo");
 
             entity.HasIndex(e => e.Email, "loginrelation_email_key").IsUnique();
 
             entity.HasIndex(e => e.Username, "loginrelation_username_key").IsUnique();
 
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("nextval('loginrelation_id_seq'::regclass)")
+                .HasColumnName("id");
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .HasColumnName("email");
