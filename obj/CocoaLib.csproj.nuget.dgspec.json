@@ -57,6 +57,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23419.4, )"
             }
           },
           "imports": [

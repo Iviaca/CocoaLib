@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "idZswTKaM5RYSlJ0c6y7B8bEEtl8hc1pY76i4SscWEytXFV4ob8bPK796EB+utE8eIjmpE+rh8QvKaGvOcaKdA==",
+  "dgSpecHash": "WWljeshsedKRY1rBYxmEcRJsI+hzqGx+uHDPGAicUNgMa6d0oT64DoEFMhyKFE/Kbmyvdvt0Vl4YmaZQhFiwVQ==",
   "success": true,
   "projectFilePath": "F:\\codes&apps\\dsktp\\CocoaLib\\CocoaLib.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,9 @@
     "C:\\Users\\LimeElven\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\LimeElven\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\LimeElven\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
+    "C:\\Users\\LimeElven\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0-rc.1.23419.4\\system.configuration.configurationmanager.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\LimeElven\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0-rc.1.23419.4\\system.diagnostics.eventlog.8.0.0-rc.1.23419.4.nupkg.sha512",
+    "C:\\Users\\LimeElven\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0-rc.1.23419.4\\system.security.cryptography.protecteddata.8.0.0-rc.1.23419.4.nupkg.sha512",
     "C:\\Users\\LimeElven\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\LimeElven\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],

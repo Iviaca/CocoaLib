@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using CocoaLib.ViewModel;
 
 namespace CocoaLib.Repositories
 {
@@ -22,15 +23,23 @@ namespace CocoaLib.Repositories
         /// </summary>
         /// <param name="credential"></param>
         /// <returns>返回bool</returns>
-        public async Task<bool> AuthenticateUser(NetworkCredential credential)
+        public bool AuthenticateUser(NetworkCredential credential)
         {
-
-            bool validUsr =false;
-            await using (var conn = await GetConnecton().OpenConnectionAsync())
+            bool validUsr = false;
+            using (var context = new QbotContext())
             {
-
+                LoginWpfUsersInfo userInfo = null;
+                try
+                {
+                    userInfo = context.LoginWpfUsersInfos
+                        .Single(b => b.Username == credential.UserName && b.Password == credential.Password);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.StackTrace);
+                }
+                validUsr = userInfo.Username == credential.UserName ? true : false;
             }
-
             return validUsr;
         }
 

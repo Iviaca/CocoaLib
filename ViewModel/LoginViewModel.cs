@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CocoaLib.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,7 +50,7 @@ namespace CocoaLib.ViewModel
         #region ctor
         public LoginViewModel()
         {
-            LoginCommand = new ViewModelCommand(ExecuteLoginCmd, CanExecuteLogin);//李氏转换 构造函数给几个command接口赋值实例化的viewmodelCommand
+            LoginCommand = new ViewModelCommand(ExecuteLoginCmdAsync, CanExecuteLogin);//李氏转换 构造函数给几个command接口赋值实例化的viewmodelCommand
             RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverCmd("", ""));
         }
 
@@ -58,9 +60,18 @@ namespace CocoaLib.ViewModel
         }
         #endregion
 
-        private void ExecuteLoginCmd(object obj)
+        private void ExecuteLoginCmdAsync(object obj)
         {
-            MessageBox.Show("keainie");
+            UserRepository usrRepo =  new UserRepository();
+            bool usrValid = usrRepo.AuthenticateUser(new NetworkCredential(Username, Password));
+            if (!usrValid)
+            {
+                MessageBox.Show("卟卟！");
+            }
+            else
+            {
+                MessageBox.Show("可爱捏");
+            }
         }
 
         private bool CanExecuteLogin(object obj)

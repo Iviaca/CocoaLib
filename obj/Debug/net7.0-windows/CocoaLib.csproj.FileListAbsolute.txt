@@ -71,3 +71,8 @@ F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\Npgsql.EntityFrameworkCore
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CocoaLib.csproj.AssemblyReference.cache
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CustomControl\BindablePasswordBox.g.cs
 F:\codes&apps\dsktp\CocoaLib\obj\Debug\net7.0-windows\CustomControl\BindablePasswordBox.baml
+F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\System.Configuration.ConfigurationManager.dll
+F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\System.Diagnostics.EventLog.dll
+F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\System.Security.Cryptography.ProtectedData.dll
+F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll
+F:\codes&apps\dsktp\CocoaLib\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll

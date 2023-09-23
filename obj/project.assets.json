@@ -347,6 +347,68 @@
           "lib/netstandard2.0/System.CodeDom.dll": {}
         }
       },
+      "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0-rc.1.23419.4",
+          "System.Security.Cryptography.ProtectedData": "8.0.0-rc.1.23419.4"
+        },
+        "compile": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Diagnostics.EventLog/8.0.0-rc.1.23419.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Text.Encodings.Web/7.0.0": {
         "type": "package",
         "compile": {
@@ -879,6 +941,109 @@
         "version.txt"
       ]
     },
+    "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+      "sha512": "HMpm9//lKNRtlsFkd6UnbwADdTlxdKvf/cPG1XOYdZpPmzGNPGLiFHORsCL41ntzTlg8CQU6952BkVf/qm3ZSQ==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/8.0.0-rc.1.23419.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.8.0.0-rc.1.23419.4.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.EventLog/8.0.0-rc.1.23419.4": {
+      "sha512": "3o0qExLJUt8QFmyn3zQv1WovGlX1JpmBEtKWhtcrX75WH57xg3Y4GWQQT4BACDdpXpllvVB9Io0RswYeONOV3Q==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/8.0.0-rc.1.23419.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.EventLog.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "lib/net462/System.Diagnostics.EventLog.dll",
+        "lib/net462/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/net7.0/System.Diagnostics.EventLog.dll",
+        "lib/net7.0/System.Diagnostics.EventLog.xml",
+        "lib/net8.0/System.Diagnostics.EventLog.dll",
+        "lib/net8.0/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.8.0.0-rc.1.23419.4.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+      "sha512": "p7UlSyRHRZ5EloVOSD8D35qbcfdy2nTvez3IuWGS0Jh9Jz08idwembfFCJNPNVi5DJ92ffRM3DgWZdwB67ZNCg==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/8.0.0-rc.1.23419.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.8.0.0-rc.1.23419.4.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encodings.Web/7.0.0": {
       "sha512": "OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
       "type": "package",
@@ -985,7 +1150,8 @@
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
+      "System.Configuration.ConfigurationManager >= 8.0.0-rc.1.23419.4"
     ]
   },
   "packageFolders": {
@@ -1047,6 +1213,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[7.0.11, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[8.0.0-rc.1.23419.4, )"
           }
         },
         "imports": [

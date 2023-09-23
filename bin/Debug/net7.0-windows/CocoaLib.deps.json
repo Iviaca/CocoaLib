@@ -9,7 +9,8 @@
       "CocoaLib/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "System.Configuration.ConfigurationManager": "8.0.0-rc.1.23419.4"
         },
         "runtime": {
           "CocoaLib.dll": {}
@@ -220,6 +221,48 @@
         }
       },
       "System.CodeDom/4.4.0": {},
+      "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0-rc.1.23419.4",
+          "System.Security.Cryptography.ProtectedData": "8.0.0-rc.1.23419.4"
+        },
+        "runtime": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/8.0.0-rc.1.23419.4": {
+        "runtime": {
+          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.41904"
+          }
+        }
+      },
       "System.Text.Encodings.Web/7.0.0": {},
       "System.Text.Json/7.0.0": {
         "dependencies": {
@@ -373,6 +416,27 @@
       "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "path": "system.codedom/4.4.0",
       "hashPath": "system.codedom.4.4.0.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HMpm9//lKNRtlsFkd6UnbwADdTlxdKvf/cPG1XOYdZpPmzGNPGLiFHORsCL41ntzTlg8CQU6952BkVf/qm3ZSQ==",
+      "path": "system.configuration.configurationmanager/8.0.0-rc.1.23419.4",
+      "hashPath": "system.configuration.configurationmanager.8.0.0-rc.1.23419.4.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3o0qExLJUt8QFmyn3zQv1WovGlX1JpmBEtKWhtcrX75WH57xg3Y4GWQQT4BACDdpXpllvVB9Io0RswYeONOV3Q==",
+      "path": "system.diagnostics.eventlog/8.0.0-rc.1.23419.4",
+      "hashPath": "system.diagnostics.eventlog.8.0.0-rc.1.23419.4.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-rc.1.23419.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p7UlSyRHRZ5EloVOSD8D35qbcfdy2nTvez3IuWGS0Jh9Jz08idwembfFCJNPNVi5DJ92ffRM3DgWZdwB67ZNCg==",
+      "path": "system.security.cryptography.protecteddata/8.0.0-rc.1.23419.4",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0-rc.1.23419.4.nupkg.sha512"
     },
     "System.Text.Encodings.Web/7.0.0": {
       "type": "package",
